@@ -18,63 +18,101 @@
     <script>
         $(document).ready(function () {
             $("#bt1").click(function () {
-                var txt= $("header").text();
+                var txt = $("header").text();
                 alert(txt);
             });
-        });
 
-            $(document).ready(function () {
-                $("#bt2").click(function () {
-                    var txt= $("header").html();
-                    alert(txt);
-                });
 
-                $(document).ready(function () {
-                    $("#bt3").click(function () {
-                        var txt= $("input").val();
-                        alert(txt);
-                    });
-
-                });
+            $("#bt2").click(function () {
+                var txt = $("header").html();
+                alert(txt);
             });
 
-                $(document).ready(function () {
-                    $("#bt4").click(function () {
-                        var txt= $("a").attr("href");
-                        alert(txt);
-                    });
 
-                });
+            $("#bt3").click(function () {
+                var txt = $("input").val();
+                alert(txt);
+            });
 
-        $(document).ready(function () {
+
+            $("#bt4").click(function () {
+                var txt = $("a").attr("href");
+                alert(txt);
+            });
+
+
             $("#bt5").click(function () {
                 $("#paragrafo1").text("NOVO TEXTO DO PARAGRAFO");
 
             });
 
-        });
-        $(document).ready(function () {
+
             $("#bt6").click(function () {
                 $("#paragrafo2").html("<b>NOVO TEXTO DO PARAGRAFO</b>");
 
             });
 
-        });
-        $(document).ready(function () {
+
             $("#bt7").click(function () {
                 $("input").val("Novo conteudo");
 
             });
 
-        });
-        $(document).ready(function () {
+
             $("#bt8").click(function () {
-                var txt= $("a").attr("href");
+                var txt = $("a").attr("href");
                 alert(txt);
             });
 
-        });
 
+            $("#bt9").click(function () {
+                $("img").attr('src', 'apagada.jpg');
+            });
+
+            $("#bt10").click(function () {
+                $("ol").append("<li>Quarto</li>");
+            });
+
+            $("#bt11").click(function () {
+                $("ol").prepend("<li>Antes do Primeiro</li>");
+            });
+
+            $("#bt12").click(function () {
+                $("#paragrafo1").prepend("AMAMOS BACON");
+            });
+
+            $("#bt13").click(function () {
+                $("#paragrafo2").append("AMAMOS PUDIM");
+            });
+
+            $("#bt14").click(function () {
+                $("h1").remove('');
+            });
+
+            $("#bt15").click(function () {
+                $("section").empty();
+            });
+
+            $("#bt16").click(function () {
+                $("#paragrafo1, #paragrafo2" ).empty();
+            });
+
+            $("#bt17").click(function () {
+                $("p" ).remove(".texto, .outro");
+            });
+
+            $("#bt18").click(function () {
+                $("#paragrafo1" ).addClass("azul");
+            });
+
+            $("#bt19").click(function () {
+                $("#paragrafo2" ).addClass("vermelho importante");
+            });
+
+            $("#bt20").click(function () {
+                $("#paragrafo1" ).removeClass("azul");
+            });
+        });
 
 
 
@@ -104,6 +142,9 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda cum, cupiditate deleniti eaque iusto magnam quae quos sunt suscipit? Asperiores ducimus earum, necessitatibus nisi perspiciatis praesentium quia sunt temporibus.
         </p>
         <a href="http://ifc.edu.br" id="link1">IFC</a> <br>
+
+    </section>
+    <footer>
         <button id="bt1">Questao 1</button>
         <button id="bt2">Questao 2</button>
         <button id="bt3">Questao 3</button>
@@ -134,8 +175,6 @@
         <button id="bt28">Questao 28</button>
         <button id="bt29">Questao 29</button>
         <button id="bt30">Questao 30</button>
-    </section>
-    <footer>
         Desenvolvido por <span class="destaque">Rafael</span>.
     </footer>
 </body>
