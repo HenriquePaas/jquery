@@ -112,7 +112,51 @@
             $("#bt20").click(function () {
                 $("#paragrafo1" ).removeClass("azul");
             });
+
+            $("#bt21").click(function () {
+                $("#paragrafo2" ).toggleClass("importante");
+            });
+
+            $("#bt22").click(function () {
+                $(".outro" ).css("background-color", "darkgreen");
+            });
+
+            $("#bt23").click(function () {
+                $("header" ).css("border","dotted");
+            });
+
+            $("#bt24").click(function () {;
+                alert("backgrond-color = " + $("h1").css("color"));
+            });
+
+            $("#bt25").click(function () {
+                $("#paragrafo2" ).css({"color": "red","background-color":"grey", "font-size":"25px", "padding":"15px"});
+            });
+
+            $("#bt26").click(function () {;
+                alert("padding = " + $("input").css("padding"));
+            });
+
+            $("#bt27").click(function () {;
+                alert("height = " + $("#paragrafo1").css("height"));
+            });
+
+
+            $("#bt28").click(function () {
+                $(".outro" ).parent().css("border","dotted");
+            });
+
+            $("#bt29").click(function () {
+                $("span" ).parents().css("border","dotted");
+            });
+
+
+            $("#bt30").click(function () {
+                $("header" ).children().css("border","dotted");
+            });
         });
+
+
 
 
 
